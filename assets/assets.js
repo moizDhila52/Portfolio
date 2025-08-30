@@ -88,9 +88,9 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Portfolio',
+        description: 'React|Tailwind CSS|Next.js',
+        bgImage: '/portfolio.png',
     },
     {
         title: 'Geo based app',
