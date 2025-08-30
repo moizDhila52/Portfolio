@@ -10,11 +10,6 @@ const Services = () => {
     whileInView={{opacity:1}}
     transition={{duration:1}}
     id="services" className="w-full px-[12%] py-10 scroll-mt-20">
-      <motion.h4 
-        initial={{y:-20, opacity:0}}
-        whileInView={{y:0, opacity:1}}
-        transition={{duration:0.3, delay:0.5}}
-      className='text-center mb-2 text-lg font-Ovo'>What I offer</motion.h4>
       <motion.h2 
         initial={{y:-20, opacity:0}}
         whileInView={{y:0, opacity:1}}
@@ -25,8 +20,8 @@ const Services = () => {
       whileInView={{ opacity:1}}
       transition={{duration:0.5, delay:0.7}}
       className=' text-center max-w-2xl mx-auto font-Ovo mt-5 mb-12 font-Ovo'> 
-            I’m a developer skilled in React, Next.js, and Node.js, focusing on building efficient,
-             scalable web applications with clean code and practical solutions.
+        Proficient in React.js, MongoDB, Express.js and Node.js with a focus on building scalable, efficient web applications.  
+Strong foundation in Data Structures, Algorithms, and problem-solving with C++ and Java.
       </motion.p>
         <motion.div
         initial={{opacity:0}}
@@ -42,7 +37,6 @@ const Services = () => {
                     <Image className="w-10" src={icon} alt={title}  />
                     <h3 className='text-gray-700 text-lg my-4 dark:text-white'>{title}</h3>
                     <p className='text-gray-600 text-sm leading-5 dark:text-white/80'>{description}</p>
-                    <a href={link} className='flex items-center gap-2 text-sm mt-5'>Read more <Image className="w-4" src={assets.right_arrow} alt={title} /></a>
                 </motion.div>
             ))}
         </motion.div>

@@ -49,8 +49,7 @@ const Contact = () => {
       initial={{y:-20, opacity:0}}
       whileInView={{y:0, opacity:1}}
       transition={{duration:0.5, delay:0.7}} className=' text-center max-w-2xl mx-auto font-Ovo mt-5 mb-12 font-Ovo'> 
-            I’m a developer skilled in React, Next.js, and Node.js, focusing on building efficient,
-             scalable web applications with clean code and practical solutions.
+         I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.
       </motion.p>
       <motion.form 
       initial={{opacity:0}}

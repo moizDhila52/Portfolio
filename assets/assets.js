@@ -86,35 +86,58 @@ export const assets = {
     right_arrow_bold_dark
 };
 
-export const workData = [
+export const projects = [
     {
         title: 'Portfolio',
         description: 'React|Tailwind CSS|Next.js',
-        bgImage: '/portfolio.png',
+        bgImage: '/work-1.png?v=1',
+        link: 'https://github.com/moizDhila52/Portfolio'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'WanderLust',
+        description: 'Full stack web App',
+        bgImage: '/work-2.png?v=1',
+        link: 'https://github.com/moizDhila52/Wanderlust'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Mini chat App',
+        description: 'MongoDB ',
+        bgImage: '/work-3.png?v=1',
+        link: 'https://github.com/moizDhila52/Mini-Whatsapp'    
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'Weather App',
+        description: 'React | MUI',
+        bgImage: '/work-4.png?v=1',
+        link: 'https://github.com/moizDhila52/Weather-Now'
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+   { 
+    icon: assets.web_icon, 
+    title: 'Full-Stack Web Development', 
+    description: 'Building responsive and scalable web apps with React, Next.js, and Tailwind CSS.', 
+    link: '' 
+  },
+  { 
+    icon: assets.mobile_icon, 
+    title: 'Problem Solving & DSA', 
+    description: 'Strong foundation in C and Java with hands-on experience in DSA and competitive coding.', 
+    link: '' 
+  },
+  { 
+    icon: assets.ui_icon, 
+    title: 'Software Engineering', 
+    description: 'Understanding of software design, clean code, and preparation for SDE roles.', 
+    link: '' 
+  },
+  { 
+    icon: assets.graphics_icon, 
+    title: 'AI & Data Science', 
+    description: 'Exploring machine learning, data analysis, and applications in trading systems.', 
+    link: '' 
+  },]
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'C++, Java, JavaScript React Js, SQL, Node.js' },

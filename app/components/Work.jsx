@@ -1,4 +1,4 @@
-import { assets, workData } from '@/assets/assets'
+import { assets, projects } from '@/assets/assets'
 import React from 'react'
 import Image from 'next/image'
 import {motion} from "motion/react";
@@ -14,19 +14,18 @@ const Work = ({isDarkMode}) => {
         initial={{y:-20, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:0.3, delay:0.5}}
-      className='text-center mb-2 text-lg font-Ovo'>My portfolio</motion.h4>
+      className='text-center mb-2 text-lg font-Ovo'>My latest work</motion.h4>
       <motion.h2 
         initial={{y:-20, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:0.5, delay:0.5}}
-       className='text-center text-5xl font-Ovo'>My latest work</motion.h2>
+       className='text-center text-5xl font-Ovo'>Work Experience</motion.h2>
       <motion.p 
       initial={{opacity:0}}
       whileInView={{ opacity:1}}
       transition={{duration:0.5, delay:0.7}}
       className=' text-center max-w-2xl mx-auto font-Ovo mt-5 mb-12 font-Ovo'> 
-            I’m a developer skilled in React, Next.js, and Node.js, focusing on building efficient,
-             scalable web applications with clean code and practical solutions.
+           Developed full-stack platforms using the MERN stack (MongoDB, Express.js, React.js, Node.js) with a focus on scalable architecture and seamless user experience.
       </motion.p> 
       
       <motion.div 
@@ -34,7 +33,7 @@ const Work = ({isDarkMode}) => {
       whileInView={{opacity:1}}
       transition={{duration:0.6, delay:0.9}}
       className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5 dark:text-black'>
-        {workData.map((project, index) => (
+        {projects.map((project, index) => (
           <motion.div 
           whileHover={{scale:1.05}}
           transition={{duration:0.3}}
@@ -50,7 +49,7 @@ const Work = ({isDarkMode}) => {
                 </div>
             <div className='border rounded-full border-black w-9 aspect-square 
             flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
-                <Image src={assets.send_icon} alt="SendIcon"  className="w-5"/>
+                <a href={project.link}><Image src={assets.send_icon} alt="SendIcon"  className="w-5"/></a>
             </div>
             </div>
 
