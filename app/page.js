@@ -7,6 +7,7 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useState,useEffect } from "react";
+import { SparklesPreview } from "@/app/components/SparklesPreview";
 
 export default function Home() {
 
@@ -32,6 +33,12 @@ export default function Home() {
   
   return (
    <>
+    {/* Background Sparkles - show only in dark mode */}
+     {isDarkMode && (
+  <div className="fixed inset-0 -z-10">
+    <SparklesPreview />
+  </div>
+     )}
    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
    <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
    <About isDarkMode={isDarkMode}  setIsDarkMode={setIsDarkMode}/>

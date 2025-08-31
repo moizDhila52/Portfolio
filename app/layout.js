@@ -1,5 +1,6 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import ParticlesBackground from "./components/ui/ParticlesBackground";
 
 const outfit = Outfit({
   subsets: ["latin"], weight:["400","500","600","700"]
@@ -20,6 +21,10 @@ export default function RootLayout({ children }) {
         className={`${outfit.className} ${ovo.className} 
         antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
       >
+                   {/* Background Particles */}
+  <div className="absolute top-0 left-0 w-full h-full min-h-screen -z-10">
+          <ParticlesBackground />
+        </div>
         {children}
       </body>
     </html>

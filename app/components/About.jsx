@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { assets, infoList, toolsData } from '@/assets/assets';
 import {motion} from "motion/react";
+ 
 
 const About = ({isDarkMode, setIsDarkMode}) => {
   return (
@@ -22,19 +23,19 @@ const About = ({isDarkMode, setIsDarkMode}) => {
       className='text-center text-5xl font-Ovo'>About me</motion.h2>
 
     <motion.div 
-    initial={{opacity:0}}
+        initial={{opacity:0}}
         whileInView={{opacity:1}}
         transition={{duration:0.8}}
     className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
         <motion.div 
-          initial={{scale:0.9, opacity:0}}
+        initial={{scale:0.9, opacity:0}}
         whileInView={{scale:1, opacity:1}}
         transition={{duration:0.6}}
         className='w-64 sm:w-80 rounded-3xl max-w-none'> 
             <Image src={assets.moiz_image5} className="w-full rounded-3xl mr-100" alt=''/>
         </motion.div>
         <motion.div 
-          initial={{opacity:0}}
+        initial={{opacity:0}}
         whileInView={{opacity:1}}
         transition={{duration:0.6, delay:0.8}}
         className='flex-1'> 
@@ -61,6 +62,7 @@ const About = ({isDarkMode, setIsDarkMode}) => {
                     </motion.li>
                 ))}
             </motion.ul>   
+            
             <motion.h4
             initial={{y:20, opacity:0}}
             whileInView={{y:0, opacity:1}}
@@ -74,7 +76,7 @@ const About = ({isDarkMode, setIsDarkMode}) => {
             {toolsData.map((tool, index)=>(
             <motion.li 
             whileHover={{scale:1.1}}
-            key={index} className="border-[0.5px] border-gray-400 rounded-xl p-6 
+            key={index} className="border-[0.5px] border-gray-400 rounded-xl p-4
             cursor-pointer hover:bg-lighthover  hover:-translate-y-1 duration-500 hover:shadow-black">
                 <Image src={tool} alt="tool" className="w-5 sm:w-7" />
             </motion.li>

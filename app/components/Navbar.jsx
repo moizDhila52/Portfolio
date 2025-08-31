@@ -30,12 +30,13 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         </div>
 
         <nav className ={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between py-4 z-50 
-            ${isScroll? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20":""}` }>
+           ` }>
             <a href="#top">
     <h2 className='text-3xl font-bold cursor-pointer'>Moiz</h2>
             </a>
             <ul className= {`hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 
-                ${isScroll? "":"bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`}>
+                ${isScroll? "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-darkTheme":
+                "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`}>
                 <li><a className="font-Ovo" href="#top">Home</a></li>
                 <li><a className="font-Ovo" href="#about">About me</a></li>
                 <li><a className="font-Ovo" href="#services">Services</a></li>
